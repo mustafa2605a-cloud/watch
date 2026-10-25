@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@theme {
+  --font-cinzel: 'Cinzel', serif;
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+  
+  --color-gold-300: #e8c882;
+  --color-gold-400: #d4af37;
+  --color-gold-500: #c5a059;
+  --color-gold-600: #a7823e;
+  
+  --color-obsidian: #08080a;
+  --color-charcoal-800: #121215;
+  --color-charcoal-900: #0d0d10;
+}
+
+/* Custom Luxury Polish */
+html {
+  color-scheme: dark;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #08080a;
+  color: #ededed;
+  overflow-x: hidden;
+}
+
+/* Luxury typography utilities */
+.font-cinzel {
+  font-family: var(--font-cinzel);
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+/* Subtle gold foil text effect */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #f7e2ad 0%, #d4af37 50%, #aa8238 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-silver-gradient {
+  background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 50%, #94a3b8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.border-gold-subtle {
+  border-color: rgba(197, 160, 89, 0.25);
+}
+
+/* Glassmorphism */
+.glass-panel {
+  background: rgba(14, 14, 18, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-gold {
+  background: rgba(18, 16, 12, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(197, 160, 89, 0.2);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #08080a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c5a059;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "VELTRON | Haute Horlogerie & Luxury Timepieces",
+  "description": "The official digital flagship of VELTRON Genève. Discover precision engineering, timeless power, and luxury mechanical timepieces.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
